@@ -51,3 +51,23 @@ for(let val in heros){
     console.log(val) //return the index number of each value
 }
 console.log("for-in loop has ended")
+
+//-------------------Array methods---------------------//
+//(a)-->push()--> add to end;
+//made chnages in original array;
+let foodItems = ["potato","apple","tomato","litchi"];
+foodItems.push("orange");
+console.log(foodItems); //o/p-->["potato","apple","tomato","litchi", "orange"];
+
+//(b)-->pop()-->delete from end and return;
+//made chnages in original array;
+let deletedFoodItem=foodItems.pop();
+console.log(`Deleted item = ${deletedFoodItem}`) //o/p-->Deleted item = orange;
+
+//(c)-->toString()-->convert array to string:
+//do not make direct changes in original array;
+let numArray = [10,20,30,40];
+let numString=numArray.toString();
+console.log(typeof(numString)) // string:
+
+//(d)-->
