@@ -70,4 +70,18 @@ let numArray = [10,20,30,40];
 let numString=numArray.toString();
 console.log(typeof(numString)) // string:
 
-//(d)-->
+//(d)-->concat()-->joins multiple arrays and return result:
+//do not make direct changes in original array:
+let Name = ["vaishali","stuti","khushi"];
+let Age = [20,21,22];
+let newArray=Name.concat(Age)
+console.log(newArray) //o/p-->[ 'vaishali', 'stuti', 'khushi', 20, 21, 22 ]
+
+//(e)-->unshift()-->add to start:
+//make direct changes in original array:
+Name.unshift("nayasa")
+console.log(Name) //o/p-->[ 'nayasa', 'vaishali', 'stuti', 'khushi' ]
+
+//(f)-->shift()-->delete from start and return:
+Name.shift()
+console.log(Name) //o/p-->[ 'vaishali', 'stuti', 'khushi']
