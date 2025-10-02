@@ -83,5 +83,34 @@ Name.unshift("nayasa")
 console.log(Name) //o/p-->[ 'nayasa', 'vaishali', 'stuti', 'khushi' ]
 
 //(f)-->shift()-->delete from start and return:
+//make direct changes in original array:
 Name.shift()
 console.log(Name) //o/p-->[ 'vaishali', 'stuti', 'khushi']
+
+//(g)-->slice(startIdx, endIdx)-->return a piece of array:
+//do not make direct changes in original array:
+Name = ["vaishali","stuti","khushi"];
+let sliceName=Name.slice(0,1);
+console.log(sliceName) //o/p-->[ 'vaishali' ];
+
+//(h)-->splice(startElement, delCount, newElement1..)-->change original array(add, remove, replace)
+//make direct changes in original array:
+Name = ["vaishali","stuti","khushi"];
+//add element:
+Name.splice(2,0,"rupal","prerna")
+console.log(Name) //o/p-->[ 'vaishali', 'stuti', 'rupal', 'prerna', 'khushi' ]
+//delete element:
+Name.splice(3,1) // 3index se 1 element ko delete kr do
+console.log(Name) //o/p-->[ 'vaishali', 'stuti', 'rupal', 'khushi' ]
+//replace element:
+Name.splice(3,1,101);
+console.log(Name); //o/p-->[ 'vaishali', 'stuti', 'rupal', 101 ];
+
+//note--> agar hum splice k ander agar ek hi element ko dalte hai to bo as a slice act 
+// krne lgta hai or us index k bd sari value ko hta deta hai
+Name.splice(2);
+console.log(Name)
+
+
+
+

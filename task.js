@@ -23,3 +23,23 @@ for(let val of items){
   console.log(`value after offer = ${items[i]}`)
   i++
 }
+
+//Que 3-->Create an array to store complanies-->"Bloomberg", "Microsoft", "Uber", "Google", "Netflix":
+
+//remove the first company from the array:
+
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "Netflix"]
+companies.shift();
+console.log(companies); //o/p-->[ 'Microsoft', 'Uber', 'Google', 'Netflix' ]
+
+//remove Uber and add Ola in its place:
+companies = ["Bloomberg", "Microsoft", "Uber", "Google", "Netflix"];
+companies.splice(2,1,"Ola");
+console.log(companies) //o/p-->["Bloomberg", "Microsoft", "Ola", "Google", "Netflix"];
+
+//Add Amazon at the end;
+companies = ["Bloomberg", "Microsoft", "Uber", "Google", "Netflix"];
+companies.push("Amazon");
+console.log(companies); //o/p-->[ 'Bloomberg', 'Microsoft', 'Uber', 'Google', 'Netflix', 'Amazon' ]
+
+
